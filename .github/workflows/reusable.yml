@@ -1,0 +1,11 @@
+name: reusable-original
+on:
+  workflow_call:
+    secrets:
+      MYSECRET:
+        required: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "ORIGINAL REUSABLE WORKFLOW RAN"
